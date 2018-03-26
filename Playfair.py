@@ -55,11 +55,8 @@ def main():
 		m=m+'a'
 
 	for i in range(0,len(m)-1,2):
-		#print(i)
 		group=Group(m[i],m[i+1])
 		group.FindPos()
-		#print("V1:%d\t%d"%(group.x1,group.y1))
-		#print("V2:%d\t%d"%(group.x2,group.y2))
 		group.FindC()
 		c.append(P[group.x1][group.y1])
 		c.append(P[group.x2][group.y2])
